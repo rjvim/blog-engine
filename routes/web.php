@@ -23,3 +23,7 @@ Route::group(['prefix' => 'Pages'], function () {
 Route::group(['prefix' => 'Sections'], function () {
    Route::resource('sections','Section/SectionController');
 });
+
+Route::group(['prefix' => 'Author'], function () {
+   Route::resource('Author','AuthorController');
+});
