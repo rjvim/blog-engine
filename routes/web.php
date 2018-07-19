@@ -15,7 +15,6 @@ Route::get('/', function () {
     return view('welcome');
 });
 
-
 Route::group(['prefix' => 'Pages'], function () {
    Route::resource('pages','Pages/PageController');
 });
