@@ -18,9 +18,9 @@ class CreatePagesTable extends Migration
             $table->timestamps();
             $table->string('name');
             $table->string('slug');
-            $table->integer('publishid_at');
+            $table->integer('published_at');
             $table->string('status');
-            $table->integer('autor_id');
+            $table->integer('author_id');
         });
     }
 
