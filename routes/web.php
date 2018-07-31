@@ -14,3 +14,15 @@
 Route::get('/', function () {
     return view('welcome');
 });
+
+Route::group(['prefix' => 'Pages'], function () {
+   Route::resource('pages','Pages/PageController');
+});
+
+Route::group(['prefix' => 'Sections'], function () {
+   Route::resource('sections','Section/SectionController');
+});
+
+Route::group(['prefix' => 'Author'], function () {
+   Route::resource('Author','AuthorController');
+});
